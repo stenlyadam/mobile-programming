@@ -6,7 +6,6 @@ import ComponentScreen from './screens/ComponentScreen';
 import FriendScreen from './screens/FriendScreen';
 import HomeScreen from './screens/HomeScreen';
 
-
 const navigator = createStackNavigator({
   Component: ComponentScreen,
   Friend: FriendScreen,
