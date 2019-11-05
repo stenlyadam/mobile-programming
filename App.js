@@ -1,16 +1,27 @@
 import React from 'react';
+import { createStackNavigator, createAppContainer} from 'react-navigation';
+
 import { StyleSheet, Text, View } from 'react-native';
 import ComponentScreen from './screens/ComponentScreen';
-import Component2Screen from './screens/Component2Screen';
 import FriendScreen from './screens/FriendScreen';
+import HomeScreen from './screens/HomeScreen';
 
-export default function App() {
-  return (
-    
-      <FriendScreen />
- 
-  );
-}
+
+const navigator = createStackNavigator({
+  Component: ComponentScreen,
+  Friend: FriendScreen,
+  Home: HomeScreen
+},{
+  initialRouteName: 'Home',
+  defaultNavigationOptions: {
+    headerTitle: 'App Mobile Programming',
+    headerStyle: {
+      backgroundColor: 'grey'
+    }
+  }
+});
+
+export default createAppContainer(navigator);
 
 const styles = StyleSheet.create({
   container: {
