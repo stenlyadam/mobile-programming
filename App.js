@@ -5,11 +5,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import ComponentScreen from './screens/ComponentScreen';
 import FriendScreen from './screens/FriendScreen';
 import HomeScreen from './screens/HomeScreen';
+import ImageScreen from './screens/ImageScreen';
 
 const navigator = createStackNavigator({
   Component: ComponentScreen,
   Friend: FriendScreen,
-  Home: HomeScreen
+  Home: HomeScreen,
+  Image: ImageScreen
 },{
   initialRouteName: 'Home',
   defaultNavigationOptions: {
