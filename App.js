@@ -6,12 +6,14 @@ import ComponentScreen from './screens/ComponentScreen';
 import FriendScreen from './screens/FriendScreen';
 import HomeScreen from './screens/HomeScreen';
 import ImageScreen from './screens/ImageScreen';
+import CounterScreen from './screens/CounterScreen';
 
 const navigator = createStackNavigator({
   Component: ComponentScreen,
   Friend: FriendScreen,
   Home: HomeScreen,
-  Image: ImageScreen
+  Image: ImageScreen,
+  Counter: CounterScreen
 },{
   initialRouteName: 'Home',
   defaultNavigationOptions: {
